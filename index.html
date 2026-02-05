@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para o Amor da Minha Vida 💘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <!-- 🔒 TELA DE BLOQUEIO (aparece antes de 14/02) -->
+  <section id="lockScreen" class="container hero lock">
+    <div class="badge">Nadija, EU TE AMO! 💘</div>
+    <h1>Em breve… 💖</h1>
+    <p class="subtitle">Volte em <b>14/02</b> para desbloquear tudo 😌</p>
+
+    <div class="countdown" role="status" aria-live="polite">
+      <div class="cd-item"><span id="d">--</span><small>dias</small></div>
+      <div class="cd-item"><span id="h">--</span><small>horas</small></div>
+      <div class="cd-item"><span id="m">--</span><small>min</small></div>
+      <div class="cd-item"><span id="s">--</span><small>seg</small></div>
+    </div>
+
+    <p class="tiny muted" id="unlockMsg"></p>
+
+    <div class="actions">
+      <button class="btn" id="surpriseLock">Surpresa ✨</button>
+    </div>
+  </section>
+
+  <!-- 🔓 CONTEÚDO REAL (sua primeira versão) -->
+  <div id="siteContent" style="display:none;">
+    <header class="container hero">
+      <div class="badge">Valentine’s Day 💘</div>
+      <h1>Oi, meu amor <span class="accent">💖</span></h1>
+      <p class="subtitle">
+        Fiz esse cantinho pra você. Pequeno, mas feito com carinho gigante.
+      </p>
+
+      <div class="countdown" role="status" aria-live="polite">
+        <div class="cd-item"><span id="d2">--</span><small>dias</small></div>
+        <div class="cd-item"><span id="h2">--</span><small>horas</small></div>
+        <div class="cd-item"><span id="m2">--</span><small>min</small></div>
+        <div class="cd-item"><span id="s2">--</span><small>seg</small></div>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" id="openLetter">Abrir carta 💌</button>
+        <button class="btn" id="surprise">Surpresa ✨</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>3 motivos (entre milhões) 😌</h2>
+        <ul class="list">
+          <li>Você me faz sentir em casa.</li>
+          <li>Seu sorriso melhora qualquer dia.</li>
+          <li>Eu amo construir a vida com você.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Nossas memórias 📸</h2>
+        
+
+        <div class="gallery">
+          <figure class="photo">
+            <img src="./images/1.jpeg" alt="Foto 1" />
+           
+          </figure>
+          <figure class="photo">
+            <img src="./images/2.jpeg" alt="Foto 2" />
+           
+          </figure>
+          <figure class="photo">
+            <img src="./images/3.jpeg" alt="Foto 3" />
+           
+          </figure>
+        </div>
+      </section>
+
+      <section class="card center">
+        <h2>Escolhe uma opção 😳</h2>
+        <p class="subtitle">Quer ser minha Namorada para SEMPRE?</p>
+        <div class="actions">
+          <button class="btn primary" id="yesBtn">SIM! 💘</button>
+          <button class="btn danger" id="noBtn">Não 😅</button>
+        </div>
+        <p class="tiny muted" id="hint"></p>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-backdrop" id="closeModal"></div>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+       <section class="card">
+  <h2>Minha carta pra você 💌</h2>
+  <p class="muted">
+    Nadija,<br><br>
+
+    amor, mo, mozinho… de todos os jeitos que te chamo, só um define tudo:
+    <strong>você é o amor da minha vida</strong>. E não digo isso por hábito,
+    digo por certeza. Eu te escolheria de novo, em qualquer tempo, em qualquer
+    versão de nós dois.<br><br>
+
+    Estar com você deixou de ser um desejo e virou necessidade. Cada momento ao
+    seu lado me faz mais feliz, me dá sentido e me ajuda a entender melhor até
+    quem eu sou. Com você, tudo fica mais leve — inclusive as lutas.<br><br>
+
+    Talvez você não perceba, mas você é minha base, minha força tranquila, e
+    muito do homem que estou me tornando existe por sua causa.<br><br>
+
+    Obrigado por ser minha companheira, minha mulher, minha certeza.
+    <br><br>
+    Eu te amo — hoje, amanhã e sempre. 💗
+  </p>
+</section>
+        <div class="modal-actions">
+          <button class="btn primary" id="closeBtn">Fechar 💖</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
